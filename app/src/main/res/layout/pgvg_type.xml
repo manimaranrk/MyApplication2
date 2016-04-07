@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.purpleknot1.activity.MandapamTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/logo_linear"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/pg_type_back_imageview"
+            android:background="@drawable/back1"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_marginRight="20dp"
+
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/purplek_logo"
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/menu"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+
+                android:onClick="pgtypemenuButtonClickEvent"
+
+                android:id="@+id/pgtype_menu_imageview"
+                android:layout_alignTop="@+id/venuelbl" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="New PG/VG"
+        android:background="#6A287E"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/logo_linear"
+        android:id="@+id/new_pgvg_button"
+        android:layout_marginTop="10dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Existing PG/VG"
+        android:background="#6A287E"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/exixt_pgvg_button"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/new_pgvg_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

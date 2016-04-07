@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:weightSum="7"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+
+            android:layout_weight="5"
+            >
+
+
+
+
+
+
+            <!--<TextView-->
+
+            <!--29000000-->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/relative_layout"
+
+
+                >
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/login_username_textview"
+                    android:textColor="#6A287E"
+
+                    android:layout_marginTop="24dp"
+                    android:layout_below="@+id/sameback"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/samecomment_edittext"
+                    android:minLines="3"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:background="@drawable/squareedittext1"
+                    android:layout_below="@+id/login_username_textview"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+
+                    android:textColor="#FFFFFF"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:background="#6A287E"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/same_status_submit"
+                    android:layout_marginTop="27dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/samecomment_edittext" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/sameback"
+                    android:background="@drawable/back1"
+                    android:layout_gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <!--android:background="#88befb"-->
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear3"
+                android:orientation="vertical"
+                android:layout_below="@+id/relative_layout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

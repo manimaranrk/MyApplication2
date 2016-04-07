@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/weeklyreport_date_textview"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="55dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/weekly_report_btn"
+        android:id="@+id/linearLayout4">
+
+
+        <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="As of 08/06/2015 here are some system statistics"-->
+
+        <!--android:textSize="15sp"-->
+        <!--android:textColor="#FFFFFF"-->
+
+        <!--android:gravity="center|center_horizontal"-->
+        <!--android:background="#6f5092"-->
+
+        <!--/>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:background="@drawable/curvelist"
+                android:weightSum="4"
+
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="#"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#6A287E"
+                    android:onClick="venueIdClickEvent"
+                    android:gravity="center|left"
+                    android:id="@+id/venueid_txt"
+                    android:layout_alignBottom="@+id/venuename_txt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:id="@+id/venuename_txt"
+                    android:onClick="venueNameClickEvent"
+                    android:layout_weight="1"
+                    android:textColor="#6A287E"
+                    android:gravity="center|left"
+                    android:layout_toRightOf="@+id/venueid_txt"
+                    android:layout_toEndOf="@+id/venueid_txt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Status"
+                    android:onClick="venueStatusClickEvent"
+                    android:textSize="20sp"
+                    android:textColor="#6A287E"
+                    android:gravity="center|left"
+                    android:id="@+id/venuestatus_txt"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Date"
+                    android:onClick="venueDateClickEvent"
+                    android:textSize="20sp"
+                    android:textColor="#6A287E"
+                    android:gravity="center|left"
+                    android:id="@+id/venuedata_txt"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/weeklyeport_listview"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+
+                android:layout_below="@+id/linearLayout" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Report"
+        android:id="@+id/weekly_report_btn"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="20sp"
+
+
+        android:textColor="#6A287E"
+        android:layout_below="@+id/logo_linear"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="30dp"
+
+        android:id="@+id/logo_linear" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/weekly_back_imageview"
+            android:src="@drawable/back1"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@+id/weeklyreport_date_textview"
+            android:layout_alignLeft="@+id/weeklyreport_date_textview"
+            android:layout_alignStart="@+id/weeklyreport_date_textview" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_marginRight="20dp"
+
+
+                android:src="@drawable/purplek_logo"
+                />
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+
+                <!--android:background="@drawable/menu"-->
+                <!--android:onClick="menuButtonClickEvent"-->
+
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_weight=".25"-->
+                <!--android:id="@+id/menu_imageview"-->
+                <!--/>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

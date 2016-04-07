@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    android:id="@+id/linearLayout">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="4">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="#"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#6A287E"
+        android:textSize="15sp"
+        android:gravity="center|left"
+        android:id="@+id/schedulevenue_id_texiview"
+        android:layout_marginRight="10dp"
+     />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Venue Name"
+        android:id="@+id/schedulevenue_name_textview"
+        android:layout_weight="1"
+        android:textColor="#6A287E"
+        android:layout_marginRight="10dp"
+        android:maxLength="50"
+        android:textSize="15sp"
+        android:gravity="center|left"
+        android:layout_toRightOf="@+id/schedulevenue_id_texiview"
+        android:layout_toEndOf="@+id/schedulevenue_id_texiview" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Status"
+        android:textColor="#6A287E"
+        android:textSize="15sp"
+        android:maxLength="40"
+        android:layout_marginRight="10dp"
+        android:gravity="center|left"
+        android:id="@+id/schedulevenue_ststus_textview"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Date"
+        android:textColor="#6A287E"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|left"
+        android:id="@+id/schedulevenue_date_textview"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Status"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/textView11"-->
+    <!--/>-->
+
+</LinearLayout>

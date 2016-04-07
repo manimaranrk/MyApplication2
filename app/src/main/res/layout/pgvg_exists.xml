@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#FFFFFF"
+        android:weightSum="7"> <!-- to show what the parent is -->
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/footer_linear"
+            android:layout_weight="6"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+
+                android:src="@drawable/purplek_logo"
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+
+                >
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="Schedule List"-->
+                <!--android:id="@+id/venuelbl"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="left"-->
+
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+
+                    android:background="@drawable/menu"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="pgvgSchMenuButtonClickEvent"
+
+                    android:id="@+id/pgvg_schedulemenu_imageview"
+                    android:layout_alignTop="@+id/venuelbl" />
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="300dp"-->
+
+                <!--android:layout_below="@+id/venuelbl"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/linearLayout5">-->
+
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="As of 08/06/2015 here are some system statistics"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;android:textSize="15sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;android:gravity="center|center_horizontal"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="#6f5092"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+
+
+                <!-->-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent" android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/curvelist"-->
+                <!--android:weightSum="4"-->
+                <!--android:id="@+id/linearLayout">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="#"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="#6A287E"-->
+
+                <!--android:gravity="center|left"-->
+                <!--android:id="@+id/venueid_txt"-->
+                <!--android:layout_alignBottom="@+id/venuename_txt" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:text="Name"-->
+                <!--android:textSize="20sp"-->
+                <!--android:id="@+id/venuename_txt"-->
+
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:gravity="center|left"-->
+                <!--android:layout_toRightOf="@+id/venueid_txt"-->
+                <!--android:layout_toEndOf="@+id/venueid_txt" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:text="Status"-->
+
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:gravity="center|left"-->
+                <!--android:id="@+id/venuestatus_txt"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:text="Date"-->
+
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:gravity="center|left"-->
+                <!--android:id="@+id/venuedata_txt"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Status"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/textView11"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+                <!--</LinearLayout>-->
+
+
+
+                <!--<ListView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/scheduled_venue_listview"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:layout_marginRight="3dp"-->
+
+                <!--android:layout_below="@+id/linearLayout" />-->
+
+
+                <!--</RelativeLayout>-->
+
+
+
+
+                <!--</LinearLayout>-->
+
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/back1"
+
+                    android:id="@+id/pgvg_schedule_back_imageview"
+
+                    android:layout_alignTop="@+id/venuelbl" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/pgvgrefresh_imageview">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#6A287E"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="4">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text="#"
+                    android:layout_weight="1"
+
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:id="@+id/pgvg_id_texiview"
+
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Pg/Vg Name"
+                    android:id="@+id/pgvg_name_textview"
+                    android:layout_weight="2"
+                    android:textColor="#fff"
+
+                    android:maxLength="50"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:layout_toRightOf="@+id/pgvg_id_texiview"
+                    android:layout_toEndOf="@+id/pgvg_id_texiview" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Status"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:maxLength="40"
+
+                    android:gravity="center|left"
+                    android:id="@+id/pgvg_ststus_textview"
+                    android:layout_weight="1"
+                    />
+
+                </LinearLayout>
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                   >
+
+
+
+
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pgvg_listview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+
+
+                         />
+
+                    <!--<android.support.v4.view.ViewPager-->
+                        <!--android:id="@+id/pgvgpager"-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--/>-->
+                </ScrollView>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/pgvgrefresh_imageview"
+
+                    android:background="@drawable/refresh_icon"
+                    android:layout_alignTop="@+id/pgvg_schedulemenu_imageview"
+                    android:layout_toLeftOf="@+id/pgvg_schedulemenu_imageview"
+                    android:layout_toStartOf="@+id/pgvg_schedulemenu_imageview"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

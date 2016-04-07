@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+ 
+    <TextView
+        android:id="@+id/pgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="aaa"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/count_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <TextView
+        android:id="@+id/pgstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bbb"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/pgname"
+        android:textSize="15sp"
+
+    />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pgstatus"
+        android:weightSum="2"
+    >
+
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:text="Update Status"
+    android:background="#6A287E"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:id="@+id/pg_update_status_button"
+    android:layout_weight="1"
+    android:layout_marginRight="10dp"
+    />
+
+    <!--<Button-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:text="Same Status"-->
+    <!--android:background="#6A287E"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="18sp"-->
+    <!--android:id="@+id/update_samestatus_button"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--/>-->
+
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:text="Update GPS"
+    android:background="#6A287E"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:id="@+id/pg_update_gps_button"
+    android:layout_weight="1"
+    android:layout_alignTop="@+id/pg_update_status_button"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="count"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:id="@+id/pg_count_textview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pg_visit_id_textview"
+        android:textColor="#000"
+        android:text="a"
+        android:layout_alignTop="@+id/pg_longitude_textview"
+        android:layout_toLeftOf="@+id/pg_user_id_textview"
+        android:layout_toStartOf="@+id/pg_user_id_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pg_user_id_textview"
+        android:text="b"
+        android:textColor="#6A287E"
+        android:layout_above="@+id/venuename_label"
+        android:layout_toLeftOf="@+id/pg_count_textview"
+        android:layout_toStartOf="@+id/pg_count_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6A287E"
+        android:text="c"
+        android:id="@+id/pg_location_status"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pg_latitude_textview"
+        android:layout_toStartOf="@+id/pg_latitude_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="d"
+        android:id="@+id/pg_latitude_textview"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pg_longitude_textview"
+        android:layout_toStartOf="@+id/pg_longitude_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6A287E"
+        android:text="e"
+        android:id="@+id/pg_longitude_textview"
+        android:layout_alignTop="@+id/pgname"
+        android:layout_toLeftOf="@+id/pgid_textview"
+        android:layout_toStartOf="@+id/pgid_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="f"
+        android:id="@+id/pgid_textview"
+        android:layout_alignBaseline="@+id/pg_post_textview"
+        android:layout_alignBottom="@+id/pg_post_textview"
+        android:layout_toLeftOf="@+id/pg_current_textview"
+        android:layout_toStartOf="@+id/pg_current_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6A287E"
+        android:text="g"
+        android:id="@+id/pg_current_textview"
+        android:layout_alignBottom="@+id/pgname"
+        android:layout_toLeftOf="@+id/pg_visit_id_textview"
+        android:layout_toStartOf="@+id/pg_visit_id_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="h"
+        android:id="@+id/pg_post_textview"
+        android:layout_above="@+id/pgstatus"
+        android:layout_toLeftOf="@+id/pg_location_status"
+        android:layout_toStartOf="@+id/pg_location_status" />
+
+</RelativeLayout>

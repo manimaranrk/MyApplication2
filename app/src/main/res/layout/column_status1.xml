@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    android:id="@+id/linearLayout">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+
+        android:weightSum="6">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_weight="5"
+
+
+        android:textColor="#FFFFFF"
+        android:background="#6A287E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/status_texiview"
+        android:layout_marginRight="10dp"
+     />
+
+        <ToggleButton
+            android:id="@+id/stage3_toggle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/toggle1"
+            android:button="@null"
+            android:textOff=""
+            android:textOn=""
+
+            android:layout_weight="1"
+
+
+            android:checked="false" />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:onClick="onDateClick"
+            android:layout_weight="1"
+            android:id="@+id/stage3_date_button" />
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Time"-->
+            <!--android:id="@+id/time_button"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearbutton"
+        android:weightSum="2">
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"/>
+
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Status"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/textView11"-->
+    <!--/>-->
+
+</LinearLayout>

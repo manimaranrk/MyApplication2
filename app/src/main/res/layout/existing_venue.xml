@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/existing_venue_back_imageview"
+            android:src="@drawable/back1"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:id="@+id/statetextview"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/existing_venue_back_imageview"
+            android:layout_marginLeft="30dp"
+             />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+
+            android:layout_below="@+id/statetextview"
+            android:id="@+id/existing_venue_state_spinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:prompt="@string/select_state"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:id="@+id/citytextview"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/existing_venue_state_spinner"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+
+            android:layout_below="@+id/citytextview"
+            android:id="@+id/existing_venue_city_spinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zone"
+            android:id="@+id/zonetextview"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/existing_venue_city_spinner"
+            android:layout_marginLeft="30dp"
+            />
+
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+
+            android:layout_below="@+id/zonetextview"
+            android:id="@+id/existing_venue_zone_spinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

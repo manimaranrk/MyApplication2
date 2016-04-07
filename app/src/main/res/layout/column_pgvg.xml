@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    android:id="@+id/pgvglinearLayout">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="#"
+            android:layout_weight="1"
+
+            android:textColor="#6A287E"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:id="@+id/pgvgid_texiview"
+
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Pg/Vg Name"
+            android:id="@+id/pgvg_name_textview"
+            android:layout_weight="1"
+            android:textColor="#6A287E"
+
+            android:maxLength="50"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:layout_toRightOf="@+id/pgvg_id_texiview"
+            android:layout_toEndOf="@+id/pgvg_id_texiview" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Status"
+            android:textColor="#6A287E"
+            android:textSize="15sp"
+            android:maxLength="40"
+
+            android:gravity="center|left"
+            android:id="@+id/pgvg_ststus_textview"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+            android:maxLength="40"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:id="@+id/pgvg_lati_textview"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+            android:maxLength="40"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:id="@+id/pgvg_longi_textview"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="c"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_postvisit_textview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="d"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_userid_textview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="e"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_visitid_textview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="f"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_current_textview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_loccap_textview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_id_textview"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="i"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:maxLength="40"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:id="@+id/pgvg_id_txtview"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6A287E"/>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Status"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/textView11"-->
+    <!--/>-->
+
+</LinearLayout>

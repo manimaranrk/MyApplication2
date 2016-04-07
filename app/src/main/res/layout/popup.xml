@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/popup_element"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#88befb"
+android:orientation="vertical"
+android:padding="10sp" >
+
+
+
+
+
+    <Button
+    android:id="@+id/btn_submit_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Submit"
+        android:layout_below="@+id/time_button"
+        android:layout_alignLeft="@+id/time_button"
+        android:layout_alignStart="@+id/time_button"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue Name:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/schedule_venuename_txt"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue Id:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/schedule_venuename_txt"
+        android:layout_alignLeft="@+id/schedule_venuename_txt"
+        android:layout_alignStart="@+id/schedule_venuename_txt"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textColor="#000000"
+        android:id="@+id/schedule_venueid_txt"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/schedule_venueid_txt"
+        android:layout_alignLeft="@+id/schedule_venueid_txt"
+        android:layout_alignStart="@+id/schedule_venueid_txt" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_spinner"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/date_button"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/user_spinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/time_button"
+        android:layout_below="@+id/date_button"
+        android:layout_alignLeft="@+id/date_button"
+        android:layout_alignStart="@+id/date_button"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:id="@+id/close_button"
+        android:layout_below="@+id/btn_submit_popup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/btn_submit_popup"
+        android:layout_alignEnd="@+id/btn_submit_popup" />
+
+</RelativeLayout>
+    </ScrollView>
+
+

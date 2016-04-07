@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_linear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:id="@+id/spacelinear1">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/updatepgstatus_back_imageview"
+                    android:src="@drawable/back1"
+
+                    android:layout_above="@+id/linearLayout2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:src="@drawable/purplek_logo"
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/menu"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="menuButtonClickEvent"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/updatepg_menu_imageview"
+                    android:layout_alignTop="@+id/venuelbl" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PG/VG Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_name_textview"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/logo_linear"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:editable="false"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="30"
+            android:singleLine="true"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/schedulepg_name_edittext"
+            android:layout_below="@+id/pg_name_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stage "
+            android:id="@+id/pgstage_textview"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/schedulepg_name_edittext"
+            android:layout_marginTop="40dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/pgstage_textview"
+            android:divider="@null"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/pgrelative" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/owner_toggle"
+            android:layout_below="@+id/pgrelative"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:id="@+id/pg_next_button"
+                android:layout_weight="1"
+                android:background="#6A287E"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

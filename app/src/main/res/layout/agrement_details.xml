@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:weightSum="7"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+
+>
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+
+        android:layout_weight="5"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:weightSum="1"
+            android:id="@+id/spacelinear1">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/agreementback_imageview"
+                android:src="@drawable/back1"
+                android:layout_gravity="center"
+
+
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/purplek_logo"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:background="@drawable/menu"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="menuButtonClickEvent"
+
+                android:layout_gravity="center"
+
+                android:id="@+id/user_action_menu_imageview"
+                android:layout_alignTop="@+id/venuelbl" />
+
+
+
+        </LinearLayout>
+
+
+
+        <!--<TextView-->
+
+        <!--29000000-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/agreement_relative"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+
+
+
+            <!--<ToggleButton-->
+                <!--android:id="@+id/status_toggle"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/bgtoggle"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:button="@null"-->
+                <!--android:textOff=""-->
+                <!--android:textOn=""-->
+
+                <!--android:layout_weight="1"-->
+
+                <!--android:gravity="center_horizontal|center"-->
+
+                <!--android:checked="false"-->
+
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toRightOf="@+id/textView6"-->
+                <!--android:layout_toEndOf="@+id/textView6" />-->
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Schedule Appoinment"-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_below="@+id/live_demo_toggle"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_below="@+id/aggrement_toggle_linear"
+                android:id="@+id/agrementspacelinear1"
+                android:layout_weight="5"
+                >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:id="@+id/datetime_linear"
+
+
+
+                android:layout_marginTop="21dp"
+                android:weightSum="4"
+                android:layout_alignLeft="@+id/mandapam_name_edittext"
+                android:layout_alignStart="@+id/mandapam_name_edittext">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Date"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#ffffff"
+                    android:background="#6A287E"
+                    android:id="@+id/agreement_date_button"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Time"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#ffffff"
+                    android:background="#6A287E"
+                    android:id="@+id/agrement_time_Button"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETAILS FOR AGREMENT:"
+                android:textColor="#6A287E"
+                android:id="@+id/textView6"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/agrementspacelinear1"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Mandapam"
+                android:textColor="#6A287E"
+                android:id="@+id/mandapam_name_textview"
+                android:layout_below="@+id/textView6"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#6A287E"
+                android:id="@+id/address_textview"
+                android:layout_alignTop="@+id/address_edittext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Name"
+                android:textColor="#6A287E"
+                android:id="@+id/owner_txtview"
+                android:layout_alignTop="@+id/owner_name_edittext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father&apos;s Name"
+                android:id="@+id/father_textview"
+                android:textColor="#6A287E"
+                android:layout_alignTop="@+id/father_name_edittext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:text="Submit"-->
+                <!--android:id="@+id/submit_button"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_marginBottom="80dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/aggrement_toggle_linear">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:id="@+id/ownermet_linear">
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Owner Met"
+                        android:textColor="#6A287E"
+                        android:id="@+id/owner_textview"
+                        android:layout_alignTop="@+id/ownermet_toggle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="2"
+
+                        android:layout_alignParentStart="true" />
+
+
+                    <ToggleButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ownermet_toggle"
+                        android:background="@drawable/toggle1"
+                        android:button="@null"
+                        android:textOff=""
+                        android:textOn=""
+
+
+
+                        android:layout_alignLeft="@+id/mandapam_name_edittext"
+                        android:layout_alignStart="@+id/mandapam_name_edittext"
+                        android:checked="false">
+
+
+                    </ToggleButton>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/ownermet_linear"
+                    android:layout_alignLeft="@+id/ownermet_linear"
+                    android:layout_alignStart="@+id/ownermet_linear"
+                    android:id="@+id/live_demo_linear">
+
+
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Live Demo Provided"
+                        android:textColor="#6A287E"
+                        android:id="@+id/live_demo_textview"
+                        android:layout_weight="2"
+                        android:layout_alignTop="@+id/live_demo_toggle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <ToggleButton
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/live_demo_toggle"
+                        android:background="@drawable/toggle1"
+                        android:button="@null"
+                        android:textOff=""
+                        android:textOn=""
+
+
+                        android:weightSum="4"
+                        android:checked="false"
+                        >
+
+
+
+
+                    </ToggleButton>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REVENUE MODEL:"
+                android:textColor="#6A287E"
+                android:id="@+id/textView15"
+                android:layout_below="@+id/age_edittext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:id="@+id/owner_toggle"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="COMMITED REVENUE"
+                    android:id="@+id/commited_revenue_button"
+                    android:textColor="#ffffff"
+                    android:background="#6A287E"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="REVENUE SHARE"
+                    android:textColor="#ffffff"
+                    android:background="#6A287E"
+                    android:id="@+id/revenue_share_button"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:id="@+id/linear2"
+                android:layout_below="@+id/owner_toggle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Amount"
+                    android:textColorHint="#6A287E"
+                    android:inputType="number"
+                    android:id="@+id/amount_button"
+                    android:background="@drawable/squareedittext1"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                     />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Percentage"
+                    android:inputType="number"
+                    android:textStyle="bold"
+
+                    android:textColorHint="#6A287E"
+                    android:id="@+id/percentage_button"
+                    android:background="@drawable/squareedittext1"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+         />
+            </LinearLayout>
+
+
+
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="EMAIL:"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:id="@+id/textView16"-->
+                <!--android:layout_below="@+id/linear2"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/emailid_edittext"-->
+                <!--android:background="@drawable/squareedittext1"-->
+                <!--android:layout_alignTop="@+id/textView16"-->
+                <!--android:layout_toRightOf="@+id/address_textview"-->
+                <!--android:layout_toEndOf="@+id/address_textview" />-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="SUBMIT"
+                android:textColor="#ffffff"
+                android:background="#6A287E"
+                android:id="@+id/submit_button"
+                android:layout_below="@+id/linear2"
+
+                android:layout_marginTop="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear3"
+                android:orientation="vertical"
+                android:layout_below="@+id/submit_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="2"/>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mandapam_name_edittext"
+                android:background="@drawable/squareedittext1"
+                android:layout_alignTop="@+id/mandapam_name_textview"
+                android:layout_toRightOf="@+id/textView6"
+
+                android:layout_toEndOf="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_edittext"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/squareedittext1"
+                android:layout_below="@+id/mandapam_name_edittext"
+                android:layout_alignLeft="@+id/mandapam_name_edittext"
+                android:layout_alignStart="@+id/mandapam_name_edittext" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner_name_edittext"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/squareedittext1"
+                android:layout_below="@+id/address_edittext"
+                android:layout_alignLeft="@+id/address_edittext"
+                android:layout_alignStart="@+id/address_edittext" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/father_name_edittext"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/squareedittext1"
+                android:layout_alignLeft="@+id/owner_name_edittext"
+                android:layout_alignStart="@+id/owner_name_edittext"
+                android:layout_below="@+id/owner_name_edittext" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/age_edittext"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+
+                android:background="@drawable/squareedittext1"
+                android:layout_below="@+id/father_name_edittext"
+                android:layout_alignLeft="@+id/father_name_edittext"
+                android:layout_alignStart="@+id/father_name_edittext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="#6A287E"
+                android:id="@+id/age_textview"
+                android:layout_alignTop="@+id/age_edittext"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <!--<RadioGroup-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/rgOne"-->
+                <!--android:orientation="horizontal"-->
+                <!-->-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/rdo2"-->
+                    <!--android:button="@null"-->
+                    <!--android:drawableLeft="@drawable/on"-->
+
+                   <!-- -->
+                    <!--android:onClick="onRadioButtonClicked"-->
+                    <!--android:drawable="@android:color/transparent"-->
+                    <!--android:checked="false" />-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/rdo1"-->
+                    <!--android:button="@null"-->
+                    <!--android:drawableRight="@drawable/on"-->
+
+                    <!--android:checked="true"-->
+                    <!--android:onClick="onRadioButtonClicked"-->
+                    <!--android:drawable="@android:color/transparent"-->
+                    <!--/>-->
+
+                <!--<RadioButton-->
+                    <!--android:layout_width="65dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/rdo3"-->
+                    <!--android:button="@null"-->
+                    <!--android:drawableRight="@drawable/off"-->
+
+                    <!--android:onClick="onRadioButtonClicked"-->
+                    <!--android:drawable="@android:color/transparent"-->
+                    <!--android:checked="false" />-->
+
+            <!--</RadioGroup>-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/logo_linear">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/createpg_back_imageview"
+                android:src="@drawable/back1"
+
+                android:layout_above="@+id/linearLayout2"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:layout_gravity="center"
+                android:layout_weight="4"
+
+                android:src="@drawable/purplek_logo"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:background="@drawable/menu"
+
+                android:onClick="pgmenuButtonClickEvent"
+
+                android:layout_gravity="center"
+
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/pg_user_action_menu_imageview"
+                android:layout_alignTop="@+id/venuelbl" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_name_textview"
+            android:drawableRight="@drawable/star"
+
+            android:layout_below="@+id/logo_linear"
+            android:layout_alignLeft="@+id/pg_name_edittext"
+            android:layout_alignStart="@+id/pg_name_edittext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="30"
+            android:singleLine="true"
+
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_name_edittext"
+            android:layout_below="@+id/pg_name_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/star"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_age_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_name_edittext"
+            android:layout_alignLeft="@+id/pg_age_edittext"
+            android:layout_alignStart="@+id/pg_age_edittext" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:gravity="top|left"
+
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:id="@+id/pg_age_edittext"
+            android:inputType="number"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_age_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Father's Name:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/star"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_father_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_age_edittext"
+            android:layout_alignLeft="@+id/pg_age_edittext"
+            android:layout_alignStart="@+id/pg_age_edittext" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:gravity="top|left"
+
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:id="@+id/pg_father_edittext"
+
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_father_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/star"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_address_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_father_edittext"
+            android:layout_alignLeft="@+id/pg_father_edittext"
+            android:layout_alignStart="@+id/pg_father_edittext" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:gravity="top|left"
+
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:id="@+id/pg_address_edittext"
+
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_address_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/star"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_state_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_address_edittext"
+            android:layout_alignLeft="@+id/pg_address_edittext"
+            android:layout_alignStart="@+id/pg_address_edittext" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="30"
+            android:id="@+id/pg_state_edittext"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_state_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:drawableRight="@drawable/star"
+            android:id="@+id/pg_city_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_state_edittext"
+            android:layout_alignLeft="@+id/pg_state_edittext"
+            android:layout_alignStart="@+id/pg_state_edittext" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="30"
+            android:id="@+id/pg_city_edittext"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_city_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:drawableRight="@drawable/star"
+            android:id="@+id/pg_contactname_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_city_edittext"
+            android:layout_alignLeft="@+id/pg_city_edittext"
+            android:layout_alignStart="@+id/pg_city_edittext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/pg_contactname_edittext"
+            android:ems="30"
+            android:inputType="text"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_contactname_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tel No:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:drawableRight="@drawable/star"
+            android:id="@+id/pg_tel_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_contactname_edittext"
+            android:layout_alignLeft="@+id/pg_contactname_edittext"
+            android:layout_alignStart="@+id/pg_contactname_edittext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/pg_tel_edittext"
+            android:ems="30"
+            android:inputType="number"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_tel_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number:"
+            android:drawableRight="@drawable/star"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_number_textview"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_tel_edittext"
+            android:layout_alignLeft="@+id/pg_tel_edittext"
+            android:layout_alignStart="@+id/pg_tel_edittext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/pg_number_edittext"
+            android:ems="15"
+            android:inputType="number"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_below="@+id/pg_number_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id:"
+            android:id="@+id/pg_email_textview"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pg_number_edittext"
+            android:layout_alignLeft="@+id/pg_number_edittext"
+            android:layout_alignStart="@+id/pg_number_edittext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:ems="50"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_email_edittext"
+            android:layout_below="@+id/pg_email_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of the Firm:"
+            android:textSize="20sp"
+            android:drawableRight="@drawable/star"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_firmname_textview"
+            android:layout_below="@+id/pg_email_edittext"
+            android:layout_alignLeft="@+id/pg_email_edittext"
+            android:layout_alignStart="@+id/pg_email_edittext"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:ems="30"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_firmname_edittext"
+            android:layout_below="@+id/pg_firmname_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entity Proprietor Partnership/Company:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+
+            android:id="@+id/pg_partner_textview"
+            android:layout_below="@+id/pg_firmname_edittext"
+            android:layout_alignLeft="@+id/pg_firmname_edittext"
+            android:layout_alignStart="@+id/pg_firmname_edittext"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="15"
+
+
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_partner_edittext"
+            android:layout_below="@+id/pg_partner_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website URL:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textColor="#6A287E"
+            android:id="@+id/pg_website_textview"
+            android:layout_below="@+id/pg_partner_edittext"
+            android:layout_alignLeft="@+id/pg_partner_edittext"
+            android:layout_alignStart="@+id/pg_partner_edittext"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="50"
+
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_website_edittext"
+            android:layout_below="@+id/pg_website_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of Events Done:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/star"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_events_textview"
+            android:layout_below="@+id/pg_website_edittext"
+            android:layout_alignLeft="@+id/pg_website_edittext"
+            android:layout_alignStart="@+id/pg_website_edittext"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="5"
+            android:maxLength="5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/pg_events_edittext"
+            android:layout_below="@+id/pg_events_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:id="@+id/createpg_submit_button"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:background="#6A287E"
+            android:layout_below="@+id/pg_events_edittext"
+            android:layout_marginTop="40dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_below="@+id/createpg_submit_button"
+            ></LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

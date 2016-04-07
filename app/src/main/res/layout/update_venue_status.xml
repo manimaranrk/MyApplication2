@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    >
+<RelativeLayout
+        android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+
+        >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/updatestatus_back_imageview"
+        android:src="@drawable/back1"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+
+
+    <!--<Spinner-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_below="@+id/updatestatus_back_imageview"-->
+        <!--android:id="@+id/update_venue_state_spinner"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_alignParentTop="true"-->
+
+        <!--/>-->
+
+    <!--<Spinner-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/update_venue_state_spinner"-->
+        <!--android:id="@+id/update_venue_city_spinner"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+
+        <!--/>-->
+
+
+    <!--<Spinner-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/update_venue_city_spinner"-->
+        <!--android:id="@+id/update_venue_zone_spinner"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+
+        <!--/>-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/pg_name_textview"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/updatestatus_back_imageview"
+
+
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:editable="false"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:ems="30"
+            android:singleLine="true"
+            android:background="@drawable/squareedittext1"
+            android:id="@+id/schedulevenue_name_edittext"
+            android:layout_below="@+id/pg_name_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue Status"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#6A287E"
+            android:id="@+id/venuestatus_textview"
+            android:layout_below="@+id/schedulevenue_name_edittext"
+            android:layout_alignLeft="@+id/schedulevenue_name_edittext"
+            android:layout_alignStart="@+id/schedulevenue_name_edittext"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#6A287E"
+            android:textSize="25sp"
+            android:id="@+id/schedulevenuestatus_spinner"
+            android:layout_below="@+id/venuestatus_textview"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/squareedittext1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <CheckBox
+            android:id="@+id/notinterest_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOT Interested"
+            android:textColor="#6A287E"
+
+            android:layout_below="@+id/schedulevenuestatus_spinner"
+            android:layout_alignLeft="@+id/schedulevenue_name_edittext"
+            android:layout_alignStart="@+id/schedulevenue_name_edittext"
+            android:layout_marginTop="25dp"
+            android:checked="false" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="captureImageviewClick"
+            android:id="@+id/schedulecapture_imageview"
+            android:src="@drawable/capture5"
+
+
+            android:layout_below="@+id/intervention_checkbox"
+            android:layout_alignRight="@+id/venuecommend_edittext"
+            android:layout_alignEnd="@+id/venuecommend_edittext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commend"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6A287E"
+        android:id="@+id/venuecommend_textview"
+        android:layout_below="@+id/schedulecapture_imageview"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/venuecommend_edittext"
+        android:layout_below="@+id/venuecommend_textview"
+        android:background="@drawable/squareedittext1"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="createVenueButtonClick"
+            android:id="@+id/createvenuesubmit_button"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#6A287E"
+            android:background="@drawable/squareedittext1"
+
+            android:layout_marginTop="51dp"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/venuecommend_edittext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:layout_below="@+id/createvenuesubmit_button"
+            />
+
+    <CheckBox
+        android:id="@+id/intervention_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intervention Required"
+        android:textColor="#6A287E"
+        android:checked="false"
+        android:layout_below="@+id/notinterest_checkbox"
+        android:layout_alignLeft="@+id/notinterest_checkbox"
+        android:layout_alignStart="@+id/notinterest_checkbox" />
+
+    <CheckBox
+        android:id="@+id/introductory_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introductory Demonstration"
+        android:textColor="#6A287E"
+        android:checked="false"
+        android:layout_below="@+id/intervention_checkbox"
+        android:layout_alignTop="@+id/schedulecapture_imageview"
+        android:layout_alignLeft="@+id/intervention_checkbox"
+        android:layout_alignStart="@+id/intervention_checkbox" />
+
+    <CheckBox
+        android:id="@+id/friendly_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friendly &amp; Warmly"
+        android:textColor="#6A287E"
+        android:checked="false"
+        android:layout_below="@+id/introductory_checkbox"
+        android:layout_alignLeft="@+id/introductory_checkbox"
+        android:layout_alignStart="@+id/introductory_checkbox" />
+
+
+</RelativeLayout>
+    </ScrollView>
+
+    <!-- to show what the parent is -->
+    <!--<LinearLayout-->
+
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+
+
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical"-->
+    <!-->-->
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+
+    <!--android:gravity="center"-->
+    <!--android:layout_gravity="left"-->
+
+
+    <!--android:orientation="vertical"-->
+    <!-->-->
+
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:text="Purpleknot"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="#FFFFFF"-->
+
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:layout_marginStart="40dp"-->
+    <!--android:layout_weight="1"-->
+
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="fill_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:padding="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="4"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center|center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Ultimate Building Plan Scrutiny System"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#118C4E"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="18dp"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/textView"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:layout_weight="1" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:orientation="vertical"-->
+    <!-- -->
+    <!--android:background="#FFFFFF"-->
+    <!-- -->
+
+    <!-->-->
+
+    <!-- -->
+    <!-- -->
+
+    <!-- -->
+
+
+
+
+
+
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash; &ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"></LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash; &ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"></LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_weight="1" >-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="© Purpleknot 2015"-->
+    <!--android:textColor="#000000"-->
+    <!--android:layout_gravity="center|center_vertical"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:textSize="14dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:textStyle="bold"-->
+
+    <!--android:id="@+id/textView1"-->
+
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+

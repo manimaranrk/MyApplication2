@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back1"
+            android:id="@+id/userlist_back_imageview"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:background="@drawable/curvelist"
+            android:weightSum="4"
+            android:layout_below="@+id/userlist_back_imageview"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="User Name"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#6A287E"
+
+                android:gravity="center|left"
+                android:id="@+id/username_txt"
+                android:layout_alignBottom="@+id/venuename_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="User Role"
+                android:textSize="20sp"
+                android:id="@+id/userrole_txt"
+
+                android:layout_weight="1"
+                android:textColor="#6A287E"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/venueid_txt"
+                android:layout_toEndOf="@+id/venueid_txt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Employee Id"
+
+                android:textSize="20sp"
+                android:textColor="#6A287E"
+                android:gravity="center|left"
+                android:id="@+id/employeeid_txt"
+                android:layout_weight="1"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:text="Date"-->
+                <!--android:onClick="venueDateClickEvent"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#6A287E"-->
+                <!--android:gravity="center|left"-->
+                <!--android:id="@+id/venuedata_txt"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Status"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/textView11"-->
+            <!--/>-->
+
+        </LinearLayout>
+
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_listview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+
+            android:layout_below="@+id/linearLayout" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
